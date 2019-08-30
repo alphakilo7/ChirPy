@@ -80,12 +80,6 @@ def mode(sequence):
 	mox = tuple([k for k, v in dst.items() if v == smax(vx)])
 	
 	return mox
-	# print(mox)
-	# print(kx)
-	# print(vx)
-	# print(sequence)
-	# print(st)
-	# print(dst)
 
 
 if __name__ == "__main__":
