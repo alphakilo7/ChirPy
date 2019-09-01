@@ -1,3 +1,8 @@
+# A Simple Python Lib For Finding Central Tendencies of Sequences...
+# Author : Atharva Kale
+
+
+
 def asort(sequence):
 	"""
 	- sort the sequence in ascending order
