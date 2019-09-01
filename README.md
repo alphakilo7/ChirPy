@@ -3,7 +3,7 @@
   
   
 Hey Folks!
- The 'ChirPy' Repo was created to host my everyday practice code. The code topics might consist following topics  
+The 'ChirPy' Repo was created to host my everyday practice code. The code topics might consist following topics  
 - Python Basics
 - Tkinter (UI Programming)
 - Networking
