@@ -2,7 +2,7 @@
 ### A Python Repo For Practice..
   
   
-Hey Folks!
+Hey Folks!  
 The 'ChirPy' Repo was created to host my everyday practice code. The code topics might consist following topics  
 - Python Basics
 - Tkinter (UI Programming)
@@ -10,3 +10,7 @@ The 'ChirPy' Repo was created to host my everyday practice code. The code topics
 - Machine Learning
 - Deep Learning
 - Natural Language Processing
+- Misc.  
+
+`ChirPy n.  
+cheerful and lively ;)`  
