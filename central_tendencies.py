@@ -2,7 +2,6 @@
 # Author : Atharva Kale
 
 
-
 def asort(sequence):
 	"""
 	- sort the sequence in ascending order
@@ -26,7 +25,7 @@ def asort(sequence):
 
 def dsort(sequence):
 	"""
-	- sort the sequence in ascending order
+	- sort the sequence in descending order
 	- params
 		- sequence:list/tuple > the sequence to be sorted
 	- returns
