@@ -1,9 +1,11 @@
-# Project 'Pyke' - (Spear)
-# Project 'ChirPy' - (Cheerful and lively)
-# Project 'Pyro' - (Fire)
-# 
-
-def sort(sequence):
+def asort(sequence):
+	"""
+	- sort the sequence in ascending order
+	- params
+		- sequence:list/tuple -> the sequence to be sorted
+	- returns
+		- insq:list -> the sequence sorted in ascending order
+	"""
 	n = len(sequence)
 	insq = []
 	for sq in sequence:
@@ -17,7 +19,37 @@ def sort(sequence):
 	return insq
 
 
+def dsort(sequence):
+	"""
+	- sort the sequence in ascending order
+	- params
+		- sequence:list/tuple > the sequence to be sorted
+	- returns
+		- insq:list > the sequence sorted in ascending order
+	"""
+	n = len(sequence)
+	insq = []
+	for sq in sequence:
+		insq.append(sq)
+
+	for x in range(n, 0, -1):
+		for j in range(0, n-i-1):
+			if insq[j] > insq[j + 1]:
+				insq[j], insq[j + 1] = insq[j + 1], insq[j]
+
+	return insq
+
+
 def smax(sequence):
+	"""
+	- get maximum number from the `sequence`
+	
+	- params
+		- sequence:list/tuple -> the sequence
+	
+	- returns
+		- mx:int/float -> the maximum number
+	"""
 	mx = sequence[0]
 	for n in sequence:
 		if n > mx:
@@ -27,6 +59,15 @@ def smax(sequence):
 
 
 def smin(sequence):
+	"""
+	- get minimum number from the `sequence`
+	
+	- params
+		- sequence:list/tuple -> the sequence
+	
+	- returns
+		- mn:int/float -> the minimum number
+	"""
 	mn = sequence[0]
 	for n in sequence:
 		if n < mn:
@@ -36,6 +77,15 @@ def smin(sequence):
 
 
 def mean(sequence):
+	"""
+	- get the arithmetic mean of the given `sequence`
+	
+	- params
+		- sequence:list/tuple -> the sequence to find mean
+	
+	- returns
+		- mn:int/float -> the mean
+	"""
 	n = len(sequence)
 	sm = 0
 	for num in sequence:
@@ -47,7 +97,16 @@ def mean(sequence):
 
 
 def median(sequence):
-	d = sort(sequence)
+	"""
+	- get the median of the `sequence`
+	
+	- params
+		- sequence:list/tuple -> the sequence to find the median of
+	
+	- returns
+		- mdn:float -> the median
+	"""
+	d = asort(sequence)
 	n = len(d)
 
 	if n % 2 == 0:
@@ -61,6 +120,15 @@ def median(sequence):
 
 
 def mode(sequence):
+	"""
+	- get the mode of the `sequence`
+	
+	- params
+		- sequence:list/tuple -> the sequence to find the mean of
+	
+	- returns
+		- mox:tuple -> the tuple of mode number(s)
+	"""
 	st = list(set(sequence))
 	ln = len(st)
 	dst = dict()
@@ -83,6 +151,4 @@ def mode(sequence):
 
 
 if __name__ == "__main__":
-	seq = [1, 4, 2, 6, 3, 2, 1, 4, 1, 1, 4, 4]
-	sq = [1, 2, 3, 4, 5, 6]
-	print(mode(seq))
+	pass
